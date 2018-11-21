@@ -1,3 +1,5 @@
+import 'raf/polyfill';
+
 import React, { Component } from 'react'
 import LoginForm from "./components/LoginForm";
 import TwitterMessage from "./components/TwitterMessage";
@@ -15,7 +17,7 @@ class App extends Component {
         <h1>
           <pre>LoginForm</pre>
         </h1>
-        <LoginForm onSubmit={this.login} />
+        <LoginForm onSubmit={this.login}/>
 
         <h1>
           <pre>TwitterMessage</pre>
